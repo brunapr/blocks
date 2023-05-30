@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from 'react';
-import { getFamilies } from '../../services/api';
 import Family from '../Family';
+import { getFamilies } from '../../services/api';
 import './styles.css';
 
 interface IFamilyData {
@@ -12,7 +12,11 @@ interface IFamilyData {
   }
 }
 
-export default function Page() {
+interface ICloseProps {
+  close: boolean,
+}
+
+export default function Page(props: ICloseProps) {
   const containerRef = useRef<HTMLDivElement>(null);
 
   const [ families, setFamilies ] = useState<IFamilyData[]>([]);
@@ -63,7 +67,7 @@ export default function Page() {
         <div className="page-catalog-decor"/>
       </div>
       <div 
-        className="page-results"
+        className={`page-results ${props.close && "closed-page"}`}
         ref={containerRef}
       >
         <span>Resultados</span>

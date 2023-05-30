@@ -10,6 +10,24 @@
   align-items: center;
   gap: 28px;
 
-  color: #322E2E;
+  color: var(--primary-text);
   background-color: #E9E9E9;
+}
+
+.footer-block span {
+  text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  .footer-block {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 20px;
+    bottom: 19%;
+  }
+
+  .closed-footer {
+    bottom: 0 !important;
+  }
 }

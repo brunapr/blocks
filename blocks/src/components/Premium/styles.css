@@ -10,19 +10,21 @@
 }
 
 .premium-block p {
-  color: white;
+  color: var(--secondary-text);
 }
 
 .premium-block button {
   position: relative;
   display: flex;
   align-items: center;
-  padding: 0px 40px;
-  border: 1px solid #D835C5;
+  justify-content: center;
+  width: 250px;
+  padding: 0px 20px;
+  border: 1px solid var(--gradient-1);
 
   background: linear-gradient(
-    90deg, rgba(161, 28, 243, 0.6) 0%, 
-    rgba(216, 53, 197, 0.6) 100%
+    90deg, var(--gradient-2) 0%, 
+    var(--gradient-1) 100%
   );
   backdrop-filter: blur(20px);
 
@@ -38,10 +40,52 @@
 .premium-block span {
   font-weight: 600;
   font-size: 16px;
-  color: white;
+  color: var(--secondary-text);
 
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
+}
+
+.premium-block p:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+  .premium-block {
+    align-items: center;
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .premium-block button {
+    padding: 10px 20px;
+    justify-content: center;
+  }
+
+  .premium-block p {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .premium-block {
+    position: fixed;
+    bottom: 0;
+  }
+
+  .premium-block p {
+    padding: 0px 10%;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .premium-block p {
+    padding: 0px 5%;
+  }
 }

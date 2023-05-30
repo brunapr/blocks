@@ -1,6 +1,6 @@
 .page-block {
   box-sizing: border-box;
-  background-color: #FBFBFB;
+  background-color: var(--bg-color);
 }
 
 .page-block > * {
@@ -13,7 +13,7 @@
   padding-top: 30px;
   padding-bottom: 30px;
 
-  background: #FBFBFB;
+  background: var(--bg-color);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 
   display: flex;
@@ -21,7 +21,7 @@
   align-items: flex-start;
   justify-content: center;
 
-  border-top: 1px solid #D835C5; 
+  border-top: 1px solid var(--gradient-1); 
 }
 
 .page-catalog span {
@@ -34,8 +34,8 @@
   height: 4px; 
   border-radius: 10px;
   background: linear-gradient(
-    90deg, rgba(161, 28, 243, 0.6) 0%,
-    rgba(216, 53, 197, 0.6) 100%
+    90deg, var(--gradient-2) 0%,
+    var(--gradient-1) 100%
   );
 }
 
@@ -51,7 +51,7 @@
   padding: 35px 0px 20px 0px;
   font-weight: 600;
   font-size: 24px;
-  color: #202020;
+  color: var(--primary-text);
 }
 
 .page-results-family {
@@ -60,4 +60,30 @@
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .closed-page {
+    height: calc(100vh - 240px);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .page-results > span {
+    font-size: 20px;
+    padding: 25px 0px 10px 0px;
+  }
+
+  .page-catalog {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .page-catalog span {
+    font-size: 24px;
+  }
+
+  .closed-page {
+    height: calc(100vh - 275px);
+  }
 }
