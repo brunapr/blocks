@@ -1,0 +1,47 @@
+.premium-block {
+  box-sizing: border-box;
+  padding: 15px 0px;
+  background: rgb(36, 36, 36);
+  backdrop-filter: blur(20px);
+
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+.premium-block p {
+  color: white;
+}
+
+.premium-block button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0px 40px;
+  border: 1px solid #D835C5;
+
+  background: linear-gradient(
+    90deg, rgba(161, 28, 243, 0.6) 0%, 
+    rgba(216, 53, 197, 0.6) 100%
+  );
+  backdrop-filter: blur(20px);
+
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.premium-block button:hover {
+  background: #dfacff48;
+}
+
+.premium-block span {
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}

@@ -1,0 +1,15 @@
+.footer-block {
+  position: fixed;
+  bottom: 0;
+
+  width: 100%;
+  padding: 24px 0px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+
+  color: #322E2E;
+  background-color: #E9E9E9;
+}
