@@ -13,19 +13,27 @@
   color: var(--secondary-text);
 }
 
+.button-wrapper {
+  width: 250px;
+  height: 45px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, var(--gradient-2) 0%, var(--gradient-1) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .premium-block button {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 250px;
+  width: 248px;
+  height: 43px;
   padding: 0px 20px;
-  border: 1px solid var(--gradient-1);
+  border: none;
 
-  background: linear-gradient(
-    90deg, var(--gradient-2) 0%, 
-    var(--gradient-1) 100%
-  );
+  background: linear-gradient(90deg, var(--gradient-2) 0%, var(--gradient-1) 100%);
   backdrop-filter: blur(20px);
 
   border-radius: 8px;
@@ -34,7 +42,7 @@
 }
 
 .premium-block button:hover {
-  background: #dfacff48;
+  background: #4E4950;
 }
 
 .premium-block span {

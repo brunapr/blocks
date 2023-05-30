@@ -36,9 +36,11 @@ export default function Premium(props: ICloseData) {
         Não limite sua criatividade, 
         junte-se a familia Blocks por apenas&nbsp;<b>BRL 19,99</b>
       </p>
-      <button>
-        <span>Quero ser premium <ArrowRight size={24}/></span>
-      </button>
+      <div className="button-wrapper">
+        <button>
+          <span>Quero ser premium <ArrowRight size={24}/></span>
+        </button>
+      </div>
     </div>
   );
 }

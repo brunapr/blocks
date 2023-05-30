@@ -62,6 +62,7 @@ export default function Page(props: ICloseProps) {
 
   return(
     <div className="page-block">
+      <div className="page-divisor"/>
       <div className="page-catalog">
         <span>Catálogo</span>
         <div className="page-catalog-decor"/>

@@ -7,6 +7,12 @@
   padding: 0px 15%;
 }
 
+.page-divisor {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, var(--gradient-2) 0%, var(--gradient-1) 100%);;
+}
+
 .page-catalog {
   box-sizing: border-box;
   width: 100%;
@@ -20,8 +26,6 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-
-  border-top: 1px solid var(--gradient-1); 
 }
 
 .page-catalog span {
